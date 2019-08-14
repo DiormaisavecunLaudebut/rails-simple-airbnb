@@ -1,0 +1,54 @@
+<img src="<%= @flat.url %>" alt="" style='width:100%; height:300px;object-fit: cover'>
+<div class="container">
+  <div class="d-flex margin-top-negative">
+    <div style='width:70%;'>
+      <div class='flat-show-card'>
+        <h2><%= @flat.name %></h2>
+        <p><%= @flat.address %></p>
+      </div>
+      <div class='flat-show-card'>
+        <h3>A bit more about this flat</h3>
+        <p><%= @flat.description %></p>
+      </div>
+    </div>
+    <div class='ml-5'style='width:30%;'>
+      <div class="flat-show-card">
+
+        <h5>Book This place!</h5>
+        <div class="input-group mb-2 mr-sm-2">
+          <div class="input-group-prepend">
+            <div class="input-group-text">From:</div>
+          </div>
+          <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="12/10/2017">
+        </div>
+          <div class="input-group mb-2 mr-sm-2">
+            <div class="input-group-prepend">
+              <div class="input-group-text">To:</div>
+            </div>
+            <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="18/10/2017">
+          </div>
+        <a href="" class="btn btn-success" style="width:100%;">Book</a>
+      </div>
+      <div>
+        <div class="flat-show-card">
+          <div><h2>Details</h2></div>
+          <div class="d-flex align-items-center">
+            <i class="fas fa-user-friends mr-1"></i>
+            <%= @flat.number_of_guests %>
+            <i class="fas fa-euro-sign ml-3"></i>
+            <%= @flat.price_per_night %>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between flat-show-card">
+          <p><strong>Share</strong></p>
+          <div>
+            <i class="fab fa-facebook-square"style='font-size:30px'></i>
+            <i class="fab fa-twitter-square"style='font-size:30px'></i>
+            <i class="fab fa-pinterest-square"style='font-size:30px'></i>
+            <i class="fas fa-envelope-square"style='font-size:30px'></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

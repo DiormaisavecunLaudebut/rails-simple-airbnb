@@ -1,0 +1,18 @@
+/*
+@import "bootstrap/scss/bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+*/
+@import "font-awesome-sprockets";
+@import "font-awesome";
+@import "bootstrap/scss/bootstrap";
+
+@import 'flats';
+
+.margin-top-negative {
+    margin-top: -75px;
+}
+
+.form #query {
+  margin: 0px;
+}

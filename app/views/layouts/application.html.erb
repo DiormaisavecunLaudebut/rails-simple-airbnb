@@ -10,6 +10,22 @@
   </head>
 
   <body>
+    <nav class="navbar navbar-light bg-light">
+      <%= link_to 'Simple Airbnb', flats_path, class: 'navbar-brand' %>
+      <div class='d-flex align-items-center'>
+        <div>
+          <%= form_tag flats_path, method: :get, class: 'form-inline my-2 my-lg-0' do %>
+            <%= text_field_tag :query,
+            params[:query],
+            class: 'form-control mr-sm-2',
+            placeholder: "Search"
+             %>
+             <%= submit_tag "Search", class: 'btn btn-outline-success my-2 my-sm-0' %>
+             <% end %>
+        </div>
+          <%= link_to 'Add Flat', new_flat_path, class: 'btn btn-outline-primary my-2 my-sm-0 ml-2' %>
+      </div>
+    </nav>
     <%= yield %>
   </body>
 </html>
